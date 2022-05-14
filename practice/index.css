@@ -1,9 +1,10 @@
 h1 { font-size:2em; }
-p me { margin:20px 50px}
-p hello { font-size:3em;
+#me { margin:20px 50px}
+#hello { font-size:3em;
      background-color:blue }
-section { margin:50px; background-color:lightgray; border:2px black; font-color:purple; } 
-img { float:right; 
-    image-width:350px; 
+section { margin:50px; background-color:lightgray; border:solid 2px black; font-color:purple; } 
+image { 
+    float: right; 
+    width:350px; 
     padding:15px; }
 h1 {color:orange;}

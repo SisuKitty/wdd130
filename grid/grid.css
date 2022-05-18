@@ -1,0 +1,27 @@
+body { 
+    background-color: pink; 
+}
+main {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    /* takes up 1/2 of page each column, can also use auto, or 350px 1fr 1 fr*/
+    gap:15px;
+    row-gap:50px;
+    grid-template-rows:350px 150px 500px;
+    margin:100px;
+}
+#success {
+    grid-column:1/-1;
+    background-color:purple;
+    grid-row:3;
+}
+#first {
+    display:grid;
+    grid-template-columns: 1fr 4fr;
+    gap:15px;
+    background-color:rosybrown;
+}
+#grid {
+    display:grid;
+    grid-template-columns: 1fr 4fr 4fr 4fr;
+}

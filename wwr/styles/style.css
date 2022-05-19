@@ -4,8 +4,12 @@
 }
 nav a {
     text-align: center;
-    color:#396E94;
+    color:#c1dbb3;
     text-decoration: none;
+}
+nav a:hover {
+    background-color:#eeb058;
+    color:#cb3401;
 }
 #hero-msg h1 {
     text-align: center;
@@ -21,63 +25,59 @@ main section {
 }
 #background {
     height: 725px;
-    background-color:#ef5761;
+    background-color:#cb3401;
 }
 body {
-    background-color:white;
+    background-color:#faedca;
 }
 header {
-    background-color:#780000; 
-}
-nav a:hover {
-    background-color:#ef5761;
-    color:#003552;
+    background-color:#cb3401; 
 }
 .book {
-    background-color:#003552;
-    color:#396E94;
+    background-color:#7ebc89;
+    color:#c1dbb3;
     text-decoration: none;
 }
 .book:hover {
-    background-color: #396E94;
-    color:white;
+    background-color: #c1dbb3;
+    color:#7ebc89;
 }
 .join {
-    background-color: #780000;
-    color:#ef5761;
+    background-color: #cb3401;
+    color:#eeb058;
     text-decoration: none;
 }
 .join:hover {
-    background-color: white;
-    color:#003552;
+    background-color: #eeb058;
+    color:#cb3401;
 }
 .msg {
-    background-color: #ef5761;
+    background-color: #eeb058;
 }
 footer {
-    background-color: #396E94;
+    background-color: #cb3401;
 }
 .home-title {
-    color:#003552
+    color:#cb3401
 }
 h4 {
-    color:#003552
+    color:#cb3401
 }
 .msg h2 {
-    color:white;
+    color:#cb3401;
 }
 .msg p {
-    color:#003552;
+    color:#7ebc89;
 }
 footer h3 {
-    color:white;
+    color:#7ebc89;
 }
 footer a {
-    color:#003552;
+    color:#eeb058;
     text-decoration: none;
 }
 footer a:hover {
-    color:white;
+    color:#faedca;
     text-decoration: underline;
 }
 .icon {

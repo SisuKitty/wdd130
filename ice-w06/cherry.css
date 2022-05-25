@@ -1,0 +1,35 @@
+.grey {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(170, 170, 170);
+}
+img {
+    width: 400px;
+    height: 400px;
+}
+.box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.tart {
+    display: grid; 
+    position: absolute;
+    size:200px;
+}
+h1 {
+    font-size: 6.5em;
+    position: absolute;
+    float: right;
+    margin-top: 50px;
+    margin-left: 50px;
+    letter-spacing: 10px;
+}
+h2 {
+    color: darkred;
+    font-size: 50px;
+    float: right;
+    position: relative;
+    margin-top:275px;
+    margin-right: 100px;
+    letter-spacing: 8px;
+}

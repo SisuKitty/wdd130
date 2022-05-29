@@ -6,6 +6,8 @@ nav a {
     text-align: center;
     color:#c1dbb3;
     text-decoration: none;
+    font-family: 'Poiret One';
+    padding: 35px;
 }
 nav a:hover {
     background-color:#eeb058;
@@ -13,9 +15,11 @@ nav a:hover {
 }
 #hero-msg h1 {
     text-align: center;
+    font-family: 'Poiret One';
 } 
 #hero-msg h4 {
     text-align: center;
+    font-family: 'Poiret One';
 }
 .button-box {
     text-align: center;
@@ -29,6 +33,10 @@ main section {
 }
 body {
     background-color:#faedca;
+    font-family: 'Antic Slab', serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 header {
     background-color:#cb3401; 
@@ -37,6 +45,10 @@ header {
     background-color:#7ebc89;
     color:#c1dbb3;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .book:hover {
     background-color: #c1dbb3;
@@ -46,6 +58,9 @@ header {
     background-color: #cb3401;
     color:#eeb058;
     text-decoration: none;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .join:hover {
     background-color: #eeb058;
@@ -53,28 +68,38 @@ header {
 }
 .msg {
     background-color: #eeb058;
+    line-height: 1.5em;
+    padding: 35px;
 }
 footer {
     background-color: #cb3401;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 .home-title {
-    color:#cb3401
+    color:#cb3401;
+    font-size: 2em;
 }
 h4 {
-    color:#cb3401
+    color:#cb3401;
+    font-family: 'Poiret One';
 }
 .msg h2 {
     color:#cb3401;
+    font-family: 'Poiret One';
 }
 .msg p {
-    color:#7ebc89;
+    color:#cb3401;
+    padding-bottom: 15px;
 }
 footer h3 {
     color:#7ebc89;
+    font-family: 'Poiret One';
 }
 footer a {
     color:#eeb058;
     text-decoration: none;
+    font-family: 'Poiret One';
 }
 footer a:hover {
     color:#faedca;
@@ -82,6 +107,7 @@ footer a:hover {
 }
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 .logo {
     width: 80px;
@@ -89,3 +115,30 @@ footer a:hover {
 #hero-img {
     width: 100%;
 }
+h2 {
+    margin: 0;
+}    
+#logo_link {
+    padding-top: 5px;
+}
+footer .social img {
+    padding-top: 15px;
+}
+.home-title {
+    margin-top: 10px;
+}
+.rivers-card {
+    margin: 200px 0;
+} 
+.lunch-card {
+    margin:200px 0;
+} 
+.rapids-card {
+    margin: 200px 0;
+}
+.card-img {
+    border: 10px solid #d9c2a3;
+}
+main section img {
+    box-sizing: border-box;
+} 

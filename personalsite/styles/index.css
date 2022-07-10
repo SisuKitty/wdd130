@@ -201,11 +201,6 @@ nav a {
   font-family: 'Poiret One';
   padding: 35px;
 }
-img {
-  display: block;
-  margin: 0 auto;
-  max-width: 300px;
-}
 footer {
   background-color: var(--nav-background-color);
   padding: 25px 50px;
@@ -227,17 +222,6 @@ footer a:hover {
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
   text-decoration: underline;
-}
-
-#world {
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
-  margin-top: -100px; 
-}
-#world-box {
-  grid-column: 1/4;
-  grid-row: 1/3;
-  z-index: -1;
 }
 #world-img {
   width: 100%;

@@ -329,6 +329,9 @@ form {
 .payetteriver {
     border-left:#faedca solid 1px;
 }
+.class {
+    font-family:var(--heading-font);
+}
 
 
 @media screen and (max-width: 900px) {

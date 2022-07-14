@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/aboutus.css">
+    <title>About Us</title>
+</head>
+<body>
+    <header>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/Untitled_Artwork.png" alt="logo">
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="login.html">Where To Go</a>
+            <a href="aboutus.html">About Us</a>
+        </nav>
+    </header>
+    <section class="about">
+    <h2>This is Us</h2>
+    <p>Hover over the image to learn more.</p>
+    <div class="us">
+      <img src="images/10003576_10200780225663350_6702737514509460020_o.jpg" alt="Avatar" class="image">
+      <div class="overlay">
+        <p class="text">My family and I have always loved to travel. The world is a big place and exploring new destinations can open your eyes to the beauty of the different regions, the friendly people you'll find, the unique cultures and to see things that you'd never be able to see or experience in your hometown. So, I want be able to share how to best enjoy your trips as well and what worked for me or what didn't. We are growing our team in experienced travellers who have a love for seeing the world and want to share that love for the world.</div>
+      </div>
+    </div>
+    </section>
+    <form class="input" action="/my-handling-form-page" method="post">
+        <ul>
+            <p class="msg">Send a Message or Request</p>
+         <li>
+           <label for="name">Name:</label>
+           <input type="text" id="name" name="user_name">
+         </li>
+         <li>
+           <label for="mail">E-mail:</label>
+           <input type="email" id="mail" name="user_email">
+         </li>
+         <li>
+           <label for="msg">Message:</label>
+           <textarea id="msg" name="user_message"></textarea>
+         </li>
+         <li class="button">
+            <button type="submit">Send</button>
+        </li>
+        </ul>
+</form>
+</body>
+<script>
+    // get the feedback div element so we can do something with it.
+    const feedbackElement = document.getElementById('feedback');
+    // get the form so we can read what was entered in it.
+    const formElement = document.forms[0];
+    // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+    formElement.addEventListener('submit', function(e) {
+        // stop the form from doing the default action.
+        e.preventDefault();
+        // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+        feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+        // make the feedback element visible.
+        feedbackElement.style.display = "block";
+        // add a class to move everything down so our message doesn't cover it.
+        document.body.classList.toggle('moveDown');
+    });
+</script>
+    <footer>
+        <h3>World Wonders &copy; 2022 - Sheena Gibbons</h3>
+        <h3><a href="siteplan.html">Site Plan</a></h3>
+        <h3><a href="aboutus.html">About Us</a></h3>
+        <div class="social">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

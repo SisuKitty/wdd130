@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="styles/index.css">
   <title> TravelLogin </title>
 </head>
-<body>
+<body class="Login">
   <header>
     <a id="logo_link" href="index.html">
         <img class="logo" src="images/Untitled_Artwork.png" alt="logo">
@@ -19,6 +19,8 @@
         <a href="aboutus.html">About Us</a>
     </nav>
   </header>
+  <p class="trip"> Everyone has different situations and dream trips. Here we cater to each option. There are various options for travelling solo or with a group, different budgets, if the focus is on history or thrill, and so much more that we consider and want to clarify what you are looking for. We all have our dream trips and no matter your situuation, we can give you the perfect options. 
+  </p>
   <form class="login" action="action_page.php" method="post">
   <label for="uname"><b>Username</b></label>
       <input type="text" placeholder="Enter Username" name="uname" required>
@@ -26,53 +28,55 @@
       <label for="psw"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="psw" required>
   </form>
+  <p class="intro">Let us know what you are looking for in your ideal trip.</p>
     <main class="questions">
-      <section class="region">
-        <h2>Region</h2>
-          <img class="region-img" src="images/castle_urquhart_loch_ness_scotland_12882z.jpg" alt="cliffs of moher">
+      <section class="region">        
+          <div class="questions1">
+          <h2>Region</h2>
           <p>Lots of the world to discover and many places to see. Which direction do you want to go?</p>
+          <img class="region-img" src="images/castle_urquhart_loch_ness_scotland_12882z.jpg" alt="cliffs of moher">
+          <div class="check3">
           <label> <input type="checkbox" name="Africa"> Africa </label>
           <label> <input type="checkbox" name="Americas"> Americas </label>
           <label> <input type="checkbox" name="Asia"> Asia </label>
-          <label> <input type="checkbox" name="Europe"> Europe </label>
+          <label> <input type="checkbox" checked="checked" name="Europe"> Europe </label>
           <label> <input type="checkbox" name="Oceania"> Oceana </label>
+          </div>
       </section>
       <section class="activities">
-        <h2>Activities</h2>
-          <img class="activity-img" src="images/116467_190528101544.jpg" alt="ziplining">
+          <div class="questions2">
           <p>So many things to do around the world, what do you want your focus to be? What do you want to do on your trip?</p>
+          <h2>Activities</h2>
+          <div class="check2">
           <label> <input type="checkbox" name="History"> History </label>
-          <label> <input type="checkbox" name="Americas"> Sightseeing </label>
-          <label> <input type="checkbox" name="Asia"> Thrill </label>
-          <label> <input type="checkbox" name="Europe"> Food </label>
-          <label> <input type="checkbox" name="Oceania"> Culture </label>
+          <label> <input type="checkbox" checked="checked" name="Sightseeing"> Sightseeing </label>
+          <label> <input type="checkbox" checked="checked" name="Thrill"> Thrill </label>
+          <label> <input type="checkbox" name="Food"> Food </label>
+          <label> <input type="checkbox" name="Culture"> Culture </label>
+          </div>
+          <img class="activity-img" src="images/116467_190528101544.jpg" alt="ziplining">
       </section>
       <section class="people">
-        <h2>People</h2>
-          <img class="group-img" src="images/116467_190528101544.jpg" alt="group picture">
+          <div class="questions3">
+          <h2>People</h2>
           <p>How many people will be going on the adventure?</p>
-          <label> <input type="checkbox"  name="Africa"> Solo (1) </label>
-          <label> <input type="checkbox"  name="Americas"> Couple (2) </label>
-          <label> <input type="checkbox"  name="Asia"> Triple (3) </label>
-          <label> <input type="checkbox"  name="Europe"> Quadruple (4) </label>
-          <label> <input type="checkbox"  name="Oceania"> Five or More (5+) </label>
+          <img class="group-img" src="images/116467_190528101544.jpg" alt="group picture">
+          <div class="check3">
+          <label> <input type="checkbox"  name="1"> 1 </label>
+          <label> <input type="checkbox"  name="2"> 2 </label>
+          <label> <input type="checkbox"  name="3"> 3 </label>
+          <label> <input type="checkbox" checked="checked"  name="4"> 4 </label>
+          <label> <input type="checkbox"  name="5+"> 5+ </label>
+          </div>
       </section>
     </main>
-    <div class="container">
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
-    </div>
     <form>
-    <button type="submit">Login</button>
-      <label>
-        <input type="checkbox" name="remember"> Remember me
-      </label>
+    <button class="submitbutton" href="destinations.html" type="buttonsubmit">Submit</button>
     </form>
   <footer>
       <h3>World Wonders &copy; 2022 - Sheena Gibbons</h3>
       <h3><a href="siteplan.html">Site Plan</a></h3>
-      <h3><a href="aboutus.html">Contact Us</a></h3>
+      <h3><a href="aboutus.html">About Us</a></h3>
       <div class="social">
           <a href="https://facebook.com" target="_blank">
               <img src="images/facebook.png" alt="fb icon">

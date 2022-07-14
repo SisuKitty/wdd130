@@ -18,9 +18,10 @@
       <a href="aboutus.html">About Us</a>
   </nav>
 </header>
-<body>
-  <p>
-    So many places to go! Here are our most popular destinations that travellers enjoy.
+<body class="places">
+  <p class="intro">
+    So many places to go! 
+    Here are our most popular destinations that travellers enjoy.
   </p>
 <!-- Container for the image gallery -->
 <div class="container">
@@ -28,7 +29,7 @@
   <!-- Full-width images with number text -->
   <div class="mySlides">
     <div class="numbertext">1 / 6</div>
-      <img src="images/116467_190528101544.jpg" style="width:100%">
+      <img src="images/hawaii.jpg" style="width:100%">
   </div>
 
   <div class="mySlides">
@@ -43,17 +44,17 @@
 
   <div class="mySlides">
     <div class="numbertext">4 / 6</div>
-      <img src="images/Cliffs-of-Moher-Ireland.jpg.optimal.jpg" style="width:100%">
+      <img src="images/losangelescity.jpg" style="width:100%">
   </div>
 
   <div class="mySlides">
     <div class="numbertext">5 / 6</div>
-      <img src="images/castle_urquhart_loch_ness_scotland_12882z.jpg" style="width:100%">
+      <img src="images/alaskalights.jpg" style="width:100%">
   </div>
 
   <div class="mySlides">
     <div class="numbertext">6 / 6</div>
-      <img src="images/116467_190528101544.jpg" style="width:100%">
+      <img src="images/pandora.webp" style="width:100%">
   </div>
 
   <!-- Next and previous buttons -->
@@ -62,28 +63,28 @@
 
   <!-- Image text -->
   <div class="caption-container">
-    <p id="caption"></p>
+    <p href="losangeles.html" id="caption"></p>
   </div>
 
   <!-- Thumbnail images -->
   <div class="row">
     <div class="column">
-      <img class="demo cursor" src="images/116467_190528101544.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+      <img class="demo cursor" src="images/hawaii.jpg" style="width:100%" onclick="currentSlide(1)" alt="Hawaii">
     </div>
     <div class="column">
-      <img class="demo cursor" src="images/castle_urquhart_loch_ness_scotland_12882z.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+      <img class="demo cursor" src="images/castle_urquhart_loch_ness_scotland_12882z.jpg" style="width:100%" onclick="currentSlide(2)" alt="Scotland">
     </div>
     <div class="column">
-      <img class="demo cursor" src="images/Cliffs-of-Moher-Ireland.jpg.optimal.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+      <img class="demo cursor" src="images/Cliffs-of-Moher-Ireland.jpg.optimal.jpg" style="width:100%" onclick="currentSlide(3)" alt="Ireland">
     </div>
     <div class="column">
-      <img class="demo cursor" src="images/Cliffs-of-Moher-Ireland.jpg.optimal.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+      <img class="demo cursor" src="images/losangelescity.jpg" style="width:100%" onclick="currentSlide(4)" alt="Los Angeles">
     </div>
     <div class="column">
-      <img class="demo cursor" src="images/castle_urquhart_loch_ness_scotland_12882z.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+      <img class="demo cursor" src="images/alaskalights.jpg" style="width:100%" onclick="currentSlide(5)" alt="Alaska">
     </div>
     <div class="column">
-      <img class="demo cursor" src="images/116467_190528101544.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+      <img class="demo cursor" src="images/pandora.webp" style="width:100%" onclick="currentSlide(6)" alt="Pandora">
     </div>
   </div>
 </div>
@@ -120,10 +121,20 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
 </script>
+<p class="trip">There are many options and we can provide details for any destination you please. Explore these options or reach out to one of our friendly trip advisors that can give you a lot more options and details. 
+  We have personal accounts and experiences that are put together to give you the best details and so that you can really get an idea for what each destination will be like, and if it is the right place for you. We go in-depth about the pros and cons of each place and so there are no surprises. Get the local's insights and know the best places to go based on your preferences.</p>
+<div class="options">
+  <section class="hawaii"><h1>Hawaii</h1><p>A trip to the Hawaiian islands is a tropical paradise. Scenes and activities that are experiences of a lifetime. Anywhere you go theres so much to do and beautiful places to be seen. They have a very unique and rich culture that can be enjoyed by anyone on a visit to their islands. Dont forget to go to an authentic luau while in Hawaii.</p><div class='button-box'> <a class='destinations' href="losangeles.html">Learn More</a> </div></section>
+  <section class="scotland"><h1>Scotland</h1><p>Scotland is filled with something for everyone. With its beautiful landscapes, historical castles, friendly locals, great food and so much more; there's so many options. Also, go take a look at Lock-Ness to see if you can spot Nessie. Scotland has some of the most charismatic locals you'll meet, they'll be glad to tell you the best their homeland has to offer and they also know how to party. </p><div class='button-box'> <a class='destinations' href="losangeles.html">Learn More</a> </div></section>
+  <section class="ireland"><h1>Ireland</h1><p>While in Ireland, you may start to beleive in fairies as you see the lush and magical landscapes of Ireland. Especially with its charming cities with old taverns and old castles everywhere.</p><div class='button-box'> <a class='destinations' href="losangeles.html">Learn More</a> </div></section>
+  <section class="losangeles"><h1>Los Angeles</h1><p>The famous Los Angeles, city of angels, is a busy destination in the United States. Nearby are many different places to go: incliding Disneyland, Six Flags Magic Mountain, many different beaches on the coast, Hollywood and so much more. It has a lot to offer and a vibrant night life as well. Filled with many amazing restaraunts and might possibly see a movie star.</p><div class='button-box'> <a class='destinations' href="losangeles.html">Learn More</a> </div></section>
+  <section class="alaska"><h1>Alaska</h1><p>A bit more on the chillier side of the world, but that means many different scenes to see and activities to do. Be able to see gigantic glaciers and iceburgs scattered on the ocean, bald eagles throughout the forest, and beautiful snow-crested mountains and waterfalls. If the weather is clear enough, you may also be able to see the Northern Lights.</p><div class='button-box'> <a class='destinations' href="losangeles.html">Learn More</a> </div></section>
+  <section class="pandora"><h1>Pandora</h1><p>This ecosystem is the most beautiful you can find, but also dangerous. We have specialized guides that accompany you on this unique trip that our company offers. Special suits will be provided so that your fragile body can handle the different ecosystem. Our guide will teach out about Pandora's unique and magical flora and fauna and how you will survive this trip. Connect with the nature surrounding you and have the most thrilling adventure possible. Connect with the local Na-vi clans and learn their culture.</p><div class='button-box'> <a class='destinations' href="losangeles.html">Learn More</a> </div></section>
+</div>
 <footer>
   <h3>World Wonders &copy; 2022 - Sheena Gibbons</h3>
   <h3><a href="siteplan.html">Site Plan</a></h3>
-  <h3><a href="aboutus.html">Contact Us</a></h3>
+  <h3><a href="aboutus.html">About Us</a></h3>
   <div class="social">
       <a href="https://facebook.com" target="_blank">
           <img src="images/facebook.png" alt="fb icon">

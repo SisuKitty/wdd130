@@ -6,7 +6,7 @@ font-family: 'Tenor Sans', sans-serif;
 /* if you are using any Google fonts change the font names below to your fonts. 
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a | */
-@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+@import url('https://fonts.googleapis.com/css2?family=Candal&family=Sansita&family=Tenor+Sans&display=swap');
 
 :root {
   /* change the values below to your colors from your palette */
@@ -38,7 +38,7 @@ Fonts are separated by a | */
 /* Position the image container (needed to position the left and right arrows) */
 .container {
   position: relative;
-  width: 70%;
+  width: 50%;
   margin: auto;
 }
 /* Hide the images by default */
@@ -86,9 +86,11 @@ Fonts are separated by a | */
 /* Container for image text */
 .caption-container {
   text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
+  background-color: var(--nav-background-color);
   color: white;
+  max-height: 4em;
+  margin-top:-2em;
+  margin-bottom:-1em;
 }
 .row:after {
   content: "";
@@ -113,9 +115,9 @@ Fonts are separated by a | */
 input[type=text], input[type=password] {
   width: 100%;
   padding: 12px 20px;
-  margin: 8px 0;
+  margin: 5px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 1px solid var(--headline-color-on-white);
   box-sizing: border-box;
 }
 /* Set a style for all buttons */
@@ -123,7 +125,7 @@ button {
   background-color: #04AA6D;
   color: white;
   padding: 14px 20px;
-  margin: 8px 0;
+  margin: 5px 0;
   border: none;
   cursor: pointer;
   width: 100%;
@@ -135,19 +137,22 @@ button {
 button:hover {
   opacity: 0.8;
 }
-/* Extra style for the cancel button (red) */
-.cancelbtn {
-  width: auto;
-  padding: 10px 18px;
-  background-color: #f44336;
-}
-/* The "Forgot password" text */
+
 span.psw {
   float: right;
   padding-top: 16px;
 }
 .login {
-  background-color:var(--accent1-color)
+  background-color:var(--accent1-color);
+  margin: 1em 10em;
+  padding: 1em;
+  border: 4px solid var(--nav-hover-background-color);
+  box-shadow: 3px 3px 10px 3px #88b489;
+}
+form button {
+  background-color: var(--paragraph-background-color);
+  font-family: var(--heading-font);
+  font-size: 1em;
 }
 /*end login*/
 
@@ -180,6 +185,7 @@ p {
 nav {
   display: flex;
   justify-content: space-around;
+  font-family: var(--heading-font);
 }
 
 nav a:link, nav a:visited {
@@ -189,27 +195,23 @@ nav a:hover {
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
 }
-nav {
-  display: flex;
-  justify-content: space-around;
 
-}
 nav a {
   text-align: center;
   color:#c1dbb3;
   text-decoration: none;
-  font-family: 'Poiret One';
   padding: 35px;
 }
 footer {
   background-color: var(--nav-background-color);
-  padding: 25px 50px;
+  padding: 15px 30px;
   margin-top: 3em;
   display: flex;
   justify-content: space-around;
   align-items: center;
   font-family: var(--heading-font);
   width: 100%;
+  font-size: 18px;
 }
 footer h3 {
   color:#7ebc89;
@@ -226,17 +228,33 @@ footer a:hover {
 #world-img {
   width: 100%;
 }
+#world {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  margin-top: -100px; 
+}
+#world-box {
+  grid-column: 1/4;
+  grid-row: 1/3;
+  z-index: -1;
+}
+#world-msg {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin-top: 100px;
+}
 .start {
-  background-color: var(--nav-hover-background-color);
-  color: var(--nav-hover-link-color);
+  background-color: var(--nav-background-color);
+  color: var(--accent2-color);
   text-decoration: none;
   padding: 15px 30px;
   margin-top: 50px;
   border-radius: 5px;
+  text-align:center;
 }
 .start:hover {
-  background-color: var(--nav-background-color);
-  color:var(--nav-link-color);
+  background-color: var(--accent1-color);
+  color:var(--headline-color-on-white);
 }
 .destinations {
   background-color:var(--nav-background-color);
@@ -251,6 +269,154 @@ footer a:hover {
   background-color: var(--nav-hover-background-color);
   color:var(--nav-hover-link-color);
 }
+.questions img {
+  width: 100%;
+  padding: .5em;
+}
+.questions1, .questions3 {
+  display:grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 4em 8em;
+  background-color: var(--nav-background-color);
+  color: var(--accent2-color);
+  margin: 2em;
+  box-shadow: 3px 3px 10px 3px #576f81;
+}
+.questions2 {
+  display:grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 4em 8em;
+  background-color: var(--nav-background-color);
+  color: var(--accent2-color);
+  margin: 2em;
+  box-shadow: 3px 3px 10px 3px #576f81;
+}
+.region h2, .activities h2, .people h2 {
+  padding-left: 1em;
+}
+.region p, .activities p, .people p {
+  
+} 
+.check1, .check2, .check3 {
+  margin-left: 1em;
+  margin-top: 2.5em;
+}
+.home-title {
+  margin-top: 20px;
+}
+#world-msg h1 {
+  text-align: center;
+  font-family: var(--heading-font);
+  color: var(--nav-background-color)
+} 
+#world-msg h4 {
+  text-align: center;
+  font-family: var(--heading-font);
+  color: black;
+}
+.button-box {
+  text-align: center;
+}
+.trip {
+  background-color: var(--paragraph-background-color);
+  margin: 2em;
+  color: var(--accent1-color);
+  box-shadow: 3px 3px 10px 3px #578166;
+}
+.msg h2 {
+  text-align: center;
+  color: var(--nav-hover-background-color);
+}
+.airplane {
+  width: 700px;
+  box-shadow: 3px 3px 10px 3px #42454e;
+}
+.box {
+  background-color: var(--headline-color-on-white);
+  width: 550px;
+  text-align: center;
+  margin: 0 auto;
+  color: var(--accent2-color);
+  box-shadow: 3px 3px 10px 3px #42454e;
+  height:200px;
+}
+.planebox {
+  background-color: var(--nav-background-color);
+  padding: 2em;
+  text-align: center;
+}
+.intro {
+  text-align: center;
+  font-family: var(--heading-font);
+  font-size: 30px;
+  color: var(--headline-color-on-white);
+}
+
+/*Background*/
+.scroll {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* Full height */
+  height: 50%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-size: 80px;
+  border: 10px solid #f1f1f1;
+  position: fixed; /* Stay fixed */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 500px;
+  padding: 20px;
+  text-align: center;
+}
+.options {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 5em;
+  grid-gap: 2em;
+}
+.hawaii, .scotland, .ireland, .alaska, .pandora, .losangeles {
+  background-color: var(--accent1-color);
+  border: solid 2px var(--headline-color-on-white);
+  padding: .5em;
+  color: var(--nav-background-color);
+  box-shadow: 3px 3px 10px 3px #578166;
+}
+.options p {
+  font-size: 17px;
+}
+.options h1 {
+  text-align: center;
+  margin-top: -1px;
+  margin-bottom: -1px;
+}
+.options .button-box {
+  padding: 1em;
+}
+
+
+
 
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
